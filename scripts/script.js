@@ -8,7 +8,24 @@ var coordinates = [
     [163, 218, "Haunted Hills"],
     [545, 241, "Anarchy Acres"],
     [290, 300, "Pleasant Park"],
-    [669, 325, "Tomato Town"]
+    [669, 325, "Tomato Town"],
+    [829, 301, "Wailing Woods"],
+    [745, 211, "Risky Reels"],
+    [733, 409, "Scrapyard"],
+    [589, 451, "Dusty Depot"],
+    [609, 506, "Dusty Divot"],
+    [895, 434, "Lonely Lodge"],
+    [380, 501, "Tilted Towers"],
+    [98, 458, "Snobby Shores"],
+    [250, 494, "Stadium"],
+    [770, 538, "Retail Row"],
+    [571, 625, "Salty Springs"],
+    [371, 643, "Shifty Shafts"],
+    [235, 626, "Greasy Grove"],
+    [605, 768, "Fatal Fields"],
+    [764, 734, "Prison"],
+    [556, 913, "Lucky Landing"],
+    [360, 875, "Flush Factory"]
 
 ];
 
