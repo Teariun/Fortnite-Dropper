@@ -3,7 +3,13 @@
 //var yKoord = ["237", "321", "388","487","510","471","325","235","551","645","301","223","629","129","445","792", "900"];
 
 var coordinates = [
-    [445, 250, "Loot Lake"]
+    [445, 250, "Loot Lake"],
+    [210, 125, "Junk Junction"],
+    [163, 218, "Haunted Hills"],
+    [545, 241, "Anarchy Acres"],
+    [290, 300, "Pleasant Park"],
+    [669, 324, "Tomato Town"]
+
 ];
 
 var offset = [-45, 55]
