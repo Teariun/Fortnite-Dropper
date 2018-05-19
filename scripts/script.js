@@ -3,7 +3,7 @@
 //var yKoord = ["237", "321", "388","487","510","471","325","235","551","645","301","223","629","129","445","792", "900"];
 
 var coordinates = [
-    [445, 250, "Loot Lake"],
+    [445, 350, "Loot Lake"],
     [210, 125, "Junk Junction"],
     [163, 218, "Haunted Hills"],
     [545, 241, "Anarchy Acres"],
@@ -29,17 +29,19 @@ var coordinates = [
 
 ];
 
-var offset = [-45, 55]
+var offset = [-50, -65]
 
 var anzahlStaedte = coordinates.length;
 
 function randomize(){
+    var pic = $('#map');
+    var pic_offset = pic.offset();
+
     // Cursor sichtbar machen
     $('#cursor').css('visibility', 'visible');
-    console.log('visible!')
 	// Zufallsstadt
     var randomNumber = Math.floor((Math.random() * anzahlStaedte)); // randomNumber von allen Kordinaten
-    console.log(coordinates[randomNumber][0] + offset[0])
-    $('#cursor').css('left',(coordinates[randomNumber][0] + offset[0]) + 'px');
-    $('#cursor').css('top', (coordinates[randomNumber][1] + offset[1]) + 'px');
+
+    $('#cursor').css('left',(coordinates[randomNumber][0] + offset[0] + pic_offset.left) + 'px');
+    $('#cursor').css('top', (coordinates[randomNumber][1] + offset[1] + pic_offset.top) + 'px');
 }
