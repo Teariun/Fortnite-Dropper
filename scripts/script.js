@@ -3,7 +3,7 @@
 //var yKoord = ["237", "321", "388","487","510","471","325","235","551","645","301","223","629","129","445","792", "900"];
 
 var coordinates = [
-    [445, 350, "Loot Lake"],
+    [445, 360, "Loot Lake"],
     [210, 125, "Junk Junction"],
     [163, 218, "Haunted Hills"],
     [545, 241, "Anarchy Acres"],
@@ -29,7 +29,7 @@ var coordinates = [
 
 ];
 
-var offset = [-50, -65]
+var offset = [-52, -70]
 
 var anzahlStaedte = coordinates.length;
 
