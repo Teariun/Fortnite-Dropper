@@ -1,0 +1,36 @@
+<!DOCTYPE="html"
+<html>
+<head>
+      <link href="https://fonts.googleapis.com/css?family=Signika" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<!-- JavaScript Funktion -->
+<script>
+	// Koordinaten der Städte
+	var xKoord = ["113", "290", "447","605","384","105","675","542","763","573","831","744","240","189","898","829",];
+	var yKoord = ["237", "321", "388","487","510","471","352","235","551","645","301","223","629","129","445","792",];
+
+	function test(){
+
+		// Zufallsstadt
+		var zufallsZahl = Math.floor((Math.random() * 17)); // 0 bis 16
+
+
+		document.getElementById('Cursor').style.left= xKoord[zufallsZahl] + "px";
+		document.getElementById('Cursor').style.top = yKoord[zufallsZahl] + "px";
+	}
+</script>
+
+<body>
+    <img src="b9942449c0b8e2a8930f436f480a5fbc.jpg" id="Bild" onclick="alert('x='+event.clientX + ';y='+event.clientY)"></img>
+    <div id="Cursor">
+		<img src="101206-200.png"></img>
+	</div>
+    <button onclick="test()">Ort vorgeben</button>
+</body>
+
+
+
+
+</html>
