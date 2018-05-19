@@ -1,14 +1,13 @@
-#Bild{
+#map{
   height: 1000px;
   max-height: 90%;
 }
-#Cursor{
+#cursor{
   position: absolute;
-
   right: 10px;
   top: 8px;
-  z-index: 1
-
+  z-index: 1;
+  visibility: hidden;
 }
 button{
   width: 300px;
