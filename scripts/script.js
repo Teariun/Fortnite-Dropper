@@ -28,20 +28,24 @@ var coordinates = [
     [360, 875, "Flush Factory"]
 
 ];
-
-var offset = [-52, -70]
-
+var offset = [-55, -50]
+var randomNumber;
 var anzahlStaedte = coordinates.length;
-
-function randomize(){
-    var pic = $('#map');
-    var pic_offset = pic.offset();
-
-    // Cursor sichtbar machen
-    $('#cursor').css('visibility', 'visible');
-	// Zufallsstadt
-    var randomNumber = Math.floor((Math.random() * anzahlStaedte)); // randomNumber von allen Kordinaten
-
-    $('#cursor').css('left',(coordinates[randomNumber][0] + offset[0] + pic_offset.left) + 'px');
-    $('#cursor').css('top', (coordinates[randomNumber][1] + offset[1] + pic_offset.top) + 'px');
+var pic;
+var pic_offset;
+setInterval(function() {
+    updatePin();
+  }, 1000);
+function setPinLocation() {
+    pic = $('#map');
+    pic_offset = pic.offset();
+    randomNumber = Math.floor((Math.random() * anzahlStaedte)); 
+} 
+function updatePin(){
+    try {
+        $('#cursor').css('left',(coordinates[randomNumber][0] + offset[0] + pic_offset.left) + 'px');
+        $('#cursor').css('top', (coordinates[randomNumber][1] + offset[1] + pic_offset.top) + 'px');
+        $('#cursor').css('visibility', 'visible');
+    } catch (error) {   
+    }
 }

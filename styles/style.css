@@ -1,13 +1,17 @@
 #map{
-  height: 1000px;
-  max-height: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1000px;
 }
 #cursor{
-  position: absolute;
+  display: inline-block;
+  position: absolute;; 
   right: 10px;
   top: 8px;
   z-index: 1;
   visibility: hidden;
+  padding:0;
 }
 button{
   width: 300px;
@@ -25,6 +29,6 @@ button{
   padding: 10px 16px;
   color: #f1f1f1;
   text-align: center;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 20px;
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 30px;
 }
