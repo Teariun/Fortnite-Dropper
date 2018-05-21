@@ -35,7 +35,7 @@ var pic;
 var pic_offset;
 setInterval(function() {
     updatePin();
-  }, 1
+  }, 1)
 function setPinLocation() {
     pic = $('#map');
     pic_offset = pic.offset();
