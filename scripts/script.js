@@ -39,13 +39,13 @@ setInterval(function() {
 function setPinLocation() {
     pic = $('#map');
     pic_offset = pic.offset();
-    randomNumber = Math.floor((Math.random() * anzahlStaedte)); 
-} 
+    randomNumber = Math.floor((Math.random() * anzahlStaedte));
+}
 function updatePin(){
     try {
         $('#cursor').css('left',(coordinates[randomNumber][0] + offset[0] + pic_offset.left) + 'px');
         $('#cursor').css('top', (coordinates[randomNumber][1] + offset[1] + pic_offset.top) + 'px');
         $('#cursor').css('visibility', 'visible');
-    } catch (error) {   
+    } catch (error) {
     }
 }
