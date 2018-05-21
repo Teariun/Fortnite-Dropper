@@ -1,4 +1,4 @@
-// Koordinaten der Städte
+﻿// Koordinaten der Städte
 //var xKoord = ["113", "290", "447","605","384","105","675","542","763","573","831","744","240","189","898","829", "362"];
 //var yKoord = ["237", "321", "388","487","510","471","325","235","551","645","301","223","629","129","445","792", "900"];
 
@@ -35,7 +35,7 @@ var pic;
 var pic_offset;
 setInterval(function() {
     updatePin();
-  }, 1000);
+  }, 1
 function setPinLocation() {
     pic = $('#map');
     pic_offset = pic.offset();
